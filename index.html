@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>stack..</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@300&family=REM:wght@300&family=Sacramento&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+
+body{
+  width: auto !important;
+}
+
+@media (max-width:200px) {
+.footer{
+  padding: 0px;
+  margin: 0px;
+}
+}
+@media (max-width:480px) {
+.footer{
+  padding: 5px;
+}
+
+}
+@media (max-width:900px) {
+.footer{
+  padding: 52px;
+  font-size: 15px;  
+}
+.icon{
+  height: 40px;
+}
+}
+@media (max-width:1700px) {
+.footer{
+  padding: 52px;
+  font-size: 15px;  
+}
+.icon{
+  height: 40px;
+}
+}
+@media (max-width:990px) {
+.vl{
+  border-right: 0px transparent;
+}
+
+}
+  
+</style>
+
+<body>
+
+   <!-- header -->
+   <section class="header">
+    <header class="text-bg-light  top-bar py-4">
+      <div class=" header container">
+        <a href="./signup.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <img src="pics/download-removebg-preview.png" height="50px" class="stackoverflow icon"></a>
+        <span class="mx-auto stacko ">Stack Overflow</span>
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="./Products.html" class="nav-link px-2 text-secondary">Products</a></li>
+            <li><a href="./Help.html" class="nav-link px-2 text-black">Help</a></li>
+            <li><a href="./Inbox.html" class="nav-link px-2 text-black">Inbox</a></li>
+            <li><a href="./Task.html" class="nav-link px-2 text-black">Task</a></li>
+            <li><a href="./Achivement.html" class="nav-link px-2 text-black">Achievement</a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-white" placeholder="[python]"
+              aria-label="Search">
+          </form>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary signin"> <a href="./signup.html" class="unstyled text-decoration-none link-light">
+                Sign-up</a></button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+  <!-- header -->
+
+  <!-- container -->
+  <div class="container">
+ 
+
+  <!-- body -->
+  <section class="body row">
+    <!-- left side-bar -->
+    
+    <section class="left-sidebar col-lg-2">
+      <div class=" p-3 bg-white vl  " id="left-sidebar">       
+          <span class="fs-5 fw-semibold hm">Stack Overflow</span>
+          <hr>
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed home px-0"
+              data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+              Home
+            </button>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed hom px-0"
+              data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              Public
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="./Help.html" class="link-dark d-inline-flex text-decoration-none rounded hm">Questions</a>
+                </li>
+                <li><a href="./Inbox.html" class="link-dark d-inline-flex text-decoration-none rounded hm">Tags</a></li>
+                <li><a href="./Products.html"
+                    class="link-dark d-inline-flex text-decoration-none rounded hm">Companies</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button
+              class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-secondary htm px-0 "
+              data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+              COLLECTIVES
+            </button>
+            <div class="collapse" id="orders-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="./Collectives.html" class="link-dark d-inline-flex text-decoration-none rounded hm">Explore
+                    Collectives</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="border-top my-3" hero></li>
+          <li class="mb-1 px-0">
+            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed home px-0"
+              data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+              Teams <img src="./pics/images-removebg-preview.png" width="25px" class="mark" alt="explanation mark">
+            </button>
+            <div class="collapse" id="account-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="./Teams.html" class="link-dark d-inline-flex text-decoration-none rounded">Create A
+                    Team</a></li>
+                <li><a href="./Teams.html" class="link-dark d-inline-flex text-decoration-none rounded">Why Teams ? </a>
+                </li>
+                <li><a href="./Teams.html" class="link-dark d-inline-flex text-decoration-none rounded">Looking for your
+                    Team</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+<!-- left side-bar -->
+
+<!-- main-content -->
+
+    <section class="mainbar col-lg-7">
+      <div class="p-4">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 qt">Question Tagged [Python]</h1>
+        <button type="button" class="btn btn-primary btn-md "><a href="./Help.html" role="link"
+            class="link-light text-decoration-none">Ask Questions</a></button>
+        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
+          popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive
+          prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="./Help.html" role="link" class="link-blue d-inline-flex  text-decoration-none li">Learn more.....</a>
+          <a href="./Inbox.html" role="link" class="link-blue d-inline-flex text-decoration-none li">improve tag
+            info</a>
+          <a href="./Achivement.html" role="link" class="link-blue d-inline-flex text-decoration-none li">Top users</a>
+          <a href="./Task.html" role="link" class="link-blue d-inline-flex text-decoration-none li">Synonymys</a>
+        </div>
+      </div>
+      <section class="filter-tabs">
+        <div class="filter p-5">
+          <a class="btn btn-outline-secondary " type="button" href="#">Newest</a>
+          <a class="btn btn-outline-secondary " type="button" href="#">Active</a>
+          <a class="btn btn-outline-secondary " type="button" href="#">Bountied
+            <span class="badge flex-item text-bg-secondary">4</span>
+            </button>
+          </a>
+          <a class="btn btn-outline-secondary " type="button" href="#">Unanswered</a>
+          <div class="dropdown flex-container">
+            <button class="btn btn-outline-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-controls="uql-more-popover"
+              aria-expanded="false">
+              More
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Frequent</a></li>
+              <li><a class="dropdown-item" href="#">Score</a></li>
+              <li><a class="dropdown-item disabled" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+
+
+        </div>
+
+
+      </section>
+<!-- main-content -->
+
+<!-- right side-bar -->
+
+    </section>
+    <section class="right-sidebar col-lg-3 ">
+      <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary">
+        <a href="#"
+          class="d-flex align-items-center flex-shrink-0 p-3  link-body-emphasis text-decoration-none border-bottom bcg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-pencil-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+          </svg>
+          <span class="fs-5 fw-semibold hom ">The Overflow Blog</span>
+        </a>
+        <div class="list-group list-group-flush border-bottom scrollarea ">
+          <a href="#" class="list-group-item list-group-item-action active py-3 lh-sm bcg" aria-current="true">
+            <div class="d-flex w-100 align-items-center justify-content-between ">
+              <strong class="mb-1 small">1.</strong>
+              <small class="small">(Ep. 590)</small>
+            </div>
+            <div class="col-10 mb-1 small"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                <path
+                  d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+              </svg>How ICS get Their recognization for their work on big projects</div>
+            <div class="col-10 mb-1 small"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                <path
+                  d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+              </svg>How AI ccan Help your Business, without the hallucinations</div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-3 lh-sm bcg">
+            <div class="d-flex w-100 align-items-center justify-content-between">
+              <strong class="mb-1 hom fw-semibold fs-5">Featured on Meta</strong>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-3 lh-sm bcg">
+            <div class="d-flex w-100 align-items-center justify-content-between">
+              <p> <small class="text-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="blue" class="bi bi-chat-square" viewBox="0 0 16 16">
+                    <path
+                      d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                  </svg> Color's Update: A more detailed look </small>
+              </p>
+            </div>
+            <p>
+              <div class="col-10 mb-1 small"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue"
+                  class="bi bi-chat-square" viewBox="0 0 16 16">
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                </svg> Stack Overflow at Wearedevlopers World Congress in Berlin</div>
+            </p>
+            <p>
+              <div class="col-10 mb-1 small"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                  <path
+                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                  <path fill-rule="evenodd"
+                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg> Stack Overflow at Wearedevlopers World Congress in Berlin</div>
+            </p>
+            <p>
+              <div class="col-10 mb-1 small"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                  <path
+                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                  <path fill-rule="evenodd"
+                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg> Stack Overflow at Wearedevlopers World Congress in Berlin</div>
+            </p>
+
+            <p>
+              <div class="col-10 mb-1 small"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                  <path
+                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                  <path fill-rule="evenodd"
+                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg> Stack Overflow at Wearedevlopers World Congress in Berlin</div>
+            </p>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action py-3 lh-sm bcg " aria-current="true">
+            <div class="d-flex w-100 align-items-center justify-content-between">
+              <strong class="mb-1 fs-5 hom">Hot meta Posts</strong>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action py-3 lh-sm bcg">
+            <div class="col-10 mb-1 small"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path
+                  d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                <path fill-rule="evenodd"
+                  d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+              </svg> Stack Overflow at Wearedevlopers World Congress in Berlin</div>
+          </a>
+        </div>
+      </div>
+    </section>
+<!-- right side-bar -->`
+
+  </section>
+  <!-- body -->
+
+  <!-- container -->
+</div>
+  
+
+<!-- foooter -->
+
+  <section class="footer">
+
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 footer">
+      <div class="col mb-3">
+        <a href="./signup.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+         <img src="./pics/download-removebg-preview.png" height="50px" alt="stackoverflow icon" class="icon">
+        </a>
+        <p class="text-muted stack-overflow">Stack Overflow</p>
+      </div>
+  
+      <div class="col mb-3 hm">
+        <h5>Products</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3 hm">
+        <h5>Company</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3 hm">
+        <h5>Stock Exchange Network</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </section>
+
+<!-- foooter -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  </section>
+
+
+
+</body>
+
+
+
+</html>

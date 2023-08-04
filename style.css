@@ -1,0 +1,92 @@
+
+
+
+.icon{
+    padding-bottom: 10px;
+}
+.vl{
+    border-right: 2px solid grey;
+}
+.home{
+    font-size: 21px;
+font-family: 'REM', sans-serif;
+}
+.hm{
+    font-family: 'Montserrat', sans-serif; 
+}
+.hom{
+font-size: 15px ;
+font-family: 'REM', sans-serif;
+font: bold;
+}
+.htm{
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif ;
+}
+.mark{
+    border-radius: 50%;
+    background-color: white;
+}
+.hero{
+    display: inline-block;
+}
+.hqm{
+    font-size: 30px;
+font-family: 'Sacramento', cursive;
+}
+.qt{
+    text-align: start;
+    padding-left:25px;
+    padding-bottom:25px;   
+    display: inline; 
+    font-family: 'REM', sans-serif;
+    font-size: 30px;
+}
+.btn-md {
+    font-family: 'Montserrat', sans-serif; 
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+    float: right;
+}
+.lead{
+    padding-top: 30px !important;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 17px;
+}
+.li{
+    padding-right: 30px !important;
+    font-family: 'Montserrat', sans-serif; 
+    padding-top: 10px;
+    font-size: 15px;
+}
+.bi{
+    padding-right: 8px;
+}
+.bcg{
+    background-color: rgb(253, 216, 168) !important;
+    border:1px solid antiquewhite !important;   
+}
+.small{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif ;
+}
+.flex-container{
+    display: inline !important;
+}
+.footer{
+    background-color: black;
+    color: white !important;
+}
+.text-muted{
+    color: white !important;
+}
+.right-sidebar{
+    padding-left: 0;
+}
+.footer{
+    padding: 50px 155px;
+}
+.stack-overflow{
+    padding-left: 7px;
+}
